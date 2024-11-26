@@ -1,0 +1,253 @@
+{% extends 'app2/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Home Page
+{% endblock title %}
+
+{% block codigoDinamico %}
+
+<div class="container" transition-style="in:wipe:up">
+    
+        <!-- Banner Principal -->
+        <div class="banner">
+            <h1>Bienvenido a AutoPartes</h1>
+            <img src="{% static 'app2/logo2.jpg' %}" alt="Imagen" class="logo">
+            <p>Encuentra las mejores autopartes para tu vehículo</p>
+        </div>
+        <br> <br> 
+    <!-- Testimonios -->
+    <div id="testimoniosCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonio">
+                    <p>"Compré aquí y el servicio fue excelente. Las autopartes son de alta calidad."</p>
+                    <p><strong>- Juan Pérez</strong></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonio">
+                    <p>"Las mejores ofertas y atención rápida, lo recomiendo."</p>
+                    <p><strong>- María Gómez</strong></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonio">
+                    <p>"Todo fue fácil de encontrar y los precios son justos. Volveré a comprar."</p>
+                    <p><strong>- Carlos Fernández</strong></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonio">
+                    <p>"Recibí mi pedido a tiempo y la calidad de los productos es excelente."</p>
+                    <p><strong>- Luisa Martínez</strong></p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#testimoniosCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#testimoniosCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+    <br> <br>  
+    <!-- ofertas exclusivas -->
+    <div class="cta mt-5 text-center">
+        <h2>¡No pierdas nuestras ofertas exclusivas!</h2>
+    </div>   
+    <div id="ofertasCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="oferta">
+                    <p>¡20% de descuento en frenos esta semana!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="oferta">
+                    <p>¡10% de descuento en suspensión hasta fin de mes!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="oferta">
+                    <p>Envío gratuito en pedidos superiores a $100.000.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="oferta">
+                    <p>¡15% de descuento en motores seleccionados!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#ofertasCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#ofertasCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+    <br> <br> 
+    <!-- Nuestras Marcas -->
+    <div class="marcas mt-5">
+        <h2>Nuestras Marcas</h2>
+        <div class="row">
+            <div class="col-md-2">
+                <img src="{% static 'app2/marca1.png' %}" alt="Marca 1" class="img-fluid">
+            </div> &nbsp; &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'app2/marca2.jpeg' %}" alt="Marca 2" class="img-fluid">
+            </div> &nbsp; &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'app2/marca3.jpeg' %}" alt="Marca 3" class="img-fluid">
+            </div> &nbsp; &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'app2/marca4.png' %}" alt="Marca 4" class="img-fluid">
+            </div> &nbsp; &nbsp;&nbsp;
+            <div class="col-md-2">
+                <img src="{% static 'app2/marca5.png' %}" alt="Marca 5" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <br> <br> 
+    <!-- ¿Cómo funciona? -->
+    <div class="como-funciona mt-5">
+        <h2 class="text-center mb-4">¿Cómo funciona?</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <div class="card-body paso bg-primary text-white rounded">
+                        <h3 class="card-title">1. Busca tu producto</h3>
+                        <p class="card-text">Utiliza nuestro buscador o navega por las categorías para encontrar la autoparte que necesitas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <div class="card-body paso bg-success text-white rounded">
+                        <h3 class="card-title">2. Realiza tu compra</h3>
+                        <p class="card-text">Añade tus productos al carrito y realiza el pago de manera segura en nuestra plataforma.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-lg">
+                    <div class="card-body paso bg-danger text-white rounded">
+                        <h3 class="card-title">3. Recibe tu pedido</h3>
+                        <p class="card-text">Envío rápido y seguro hasta la puerta de tu casa o taller mecánico.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br> 
+    <!-- Preguntas Frecuentes-->
+    <div class="faq mt-5">
+        <h2>Preguntas Frecuentes</h2>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cómo puedo devolver un producto?
+                        </button>
+                    </h5>
+                </div>
+    
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Puedes devolver un producto en un plazo de 30 días después de la compra. Contacta con nuestro equipo para iniciar el proceso.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Cuáles son los métodos de pago aceptados?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Aceptamos tarjetas de crédito, débito, PayPal, y pagos a través de transferencias bancarias.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br> 
+    <!-- mapa -->
+    <div class="contacto mt-5">
+        <h2>Encuéntranos</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.018890379392!2d-58.62523172452207!3d-34.65422586016693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc77b5bc709f3%3A0x6d0b25505378c20b!2sCentro%20de%20formaci%C3%B3n%20laboral%20406!5e0!3m2!1ses-419!2sar!4v1725897741250!5m2!1ses-419!2sar" 
+                    width="800" height="600" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                </div>
+    </div>
+                
+            <div class="contacto mt-5">
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h3>Contáctanos</h3>
+                        
+                        <form action="{% url 'contacto' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="asunto">Asunto</label>
+                                <textarea class="form-control" id="asunto" name="asunto" rows="3" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+
+    <!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+$('.carousel').carousel({
+      interval: 3000  // Ajusta la velocidad (en milisegundos)
+});
+</script>
+
+<script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+{% endblock  %}

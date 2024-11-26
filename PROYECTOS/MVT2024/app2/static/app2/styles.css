@@ -1,0 +1,167 @@
+ /* Centrar el formulario vertical y horizontalmente */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Ajustar el ancho de las cajas de texto */
+.form-container form {
+    width: 100%;
+    max-width: 400px; /* Ajusta este valor según el ancho deseado */
+}
+
+.banner {
+    text-align: center;
+    background-color: #f50202;
+    padding: 20px;
+}
+
+.testimonio {
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+    background-color: #0086c4;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.oferta {
+    text-align: center;
+    font-weight: bold;
+    background-color: #1d0238;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.como-funciona h2 {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.paso {
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.paso h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.paso p {
+    font-size: 1.1em;
+}
+
+.paso:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    border: none;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer h5 {
+    font-size: 16px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes square-in-center {
+    from {
+      clip-path: inset(100% 100% 100% 100%);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:square:center"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) square-in-center both;
+  }
+
+  @keyframes wipe-in-right {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+  }
+
+  @keyframes wipe-in-up {
+    from {
+      clip-path: inset(100% 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:up"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+  }
+
+
+
+
+
+  @keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(0%);
+  }
+  40% {
+    clip-path: circle(40%);
+  }
+  100% {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:hesitate"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}
